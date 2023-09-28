@@ -1,0 +1,50 @@
+@model UserInfo
+@{
+    ViewBag.Title = "Başvuru Formu"; 
+}
+
+<h1 class="h4 text-center">Toplantı katılım formu</h1>
+<form method="post" action="/Meeting/Apply" novalidate>
+    <div asp-validation-summary="All"></div>
+    <div class="mb-3">
+        <label asp-for="MeetingId" class="form-label">Katılacağınız Toplantı</label>
+        <select asp-for="MeetingId" class="form-select">
+            <option value=""> Seçiniz</option>
+            <option value="1"> İstanbul</option>
+            <option value="2"> Ankara</option>
+            <option value="3"> İzmir</option>
+            <option value="4"> Trabzon</option>
+            <option value="5"> Konya</option>
+            <option value="6"> Antalya</option>
+            <option value="7"> Yalova</option>
+            <option value="8"> Sivas</option>
+            <option value="9"> Bursa</option>
+            <option value="10"> Kocaeli</option>
+            <option value="11"> Balıkesir</option>
+            <option value="12"> Eskişehir</option>
+            <option value="13"> Erzurum</option>
+            <option value="14"> Çanakkale</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Ad Soyad</label>
+        <input asp-for="Name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Phone" class="form-label">Telefon</label>
+        <input asp-for="Phone" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">E-Posta</label>
+        <input asp-for="Email" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="WillAttend" class="form-label">Katılım Durumu</label>
+        <select asp-for="WillAttend" class="form-select">
+            <option value=""> Seçiniz</option>
+            <option value="true"> Evet, Geliyorum</option>
+            <option value="false"> Hayır, Gelmiyorum</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" type="submit">Kaydet</button>
+</form>

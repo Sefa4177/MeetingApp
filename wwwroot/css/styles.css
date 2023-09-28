@@ -1,0 +1,17 @@
+.validation-summary-errors
+{
+    color:#dc3545;
+}
+
+.input-validation-error
+{
+    border: 1px solid#dc3545;
+}
+.card-body
+{
+    border: 2px solid#237ccf;
+}
+.thead
+{
+    border: 2px solid#dc3545;
+}

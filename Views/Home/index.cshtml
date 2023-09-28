@@ -1,0 +1,190 @@
+    @model List<MeetingInfo>
+    @{
+        ViewBag.Title = "Toplantı Başvuru"; 
+        Layout = "_Layout";
+    }
+    @section CustomContent {
+
+        <main class="text-center">
+                <div class="container mt-5 col-lg-3 p-1 mb-2 bg-primary text-white">
+                    <h1 class="h4" >@ViewBag.Selamlama</h1>
+                    <p>Aşağıda mevcut toplantı bilgileri bulunmaktadır katılmak için başvuru yapınız</p>
+                </div>
+                <a class="btn btn-md btn-outline-primary" asp-controller="Meeting" asp-action="Apply">Başvuru yap</a>
+        </main>
+    }
+    <main class="text-center">
+        @{int i = 0;}
+        <div class="container mt-3">
+            <div class="row" style="display: flex; flex-wrap: wrap;">
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                 <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">@Model[i].Location</li>
+                                <li class="list-group-item">@Model[i].Date.ToString("dd/MM/yyyy HH:mm:ss") tarihinde gerçekleşecek</li>
+                                <li class="list-group-item">@Model[i].NumberOfPeople Katılımcı</li>
+                            </ul> 
+                        </div>
+                        @{i++;}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
